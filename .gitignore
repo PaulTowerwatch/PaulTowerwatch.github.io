@@ -1,0 +1,40 @@
+# ═══════════════════════════════════════════════════════════
+#  IMPORTANTE — NO SUBIR A GITHUB
+#  Contiene datos personales de los clientes (RGPD)
+# ═══════════════════════════════════════════════════════════
+data/
+data/*
+**/data/
+**/data/*
+
+# Logs y archivos temporales del servidor
+*.log
+error_log
+*.tmp
+.tmp/
+
+# Configuración local sensible (por si más adelante mueves email/passwords a config.php)
+config.local.php
+.env
+.env.*
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Backups
+*.backup
+*.orig
+
+# Si en el futuro usas Composer (PHP)
+vendor/
+composer.lock

@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#04040A">
+<title>PAUL TOWER — Relojes de Lujo Personalizados | Fine Timepieces España</title>
+<meta name="description" content="Relojes de lujo personalizados con tu nombre o logo. Movimiento Seiko NH35, cristal de zafiro, acero inoxidable 316L. Hecho a mano en España. Diseño y presupuesto en 48h sin compromiso.">
+<meta name="keywords" content="reloj personalizado lujo, reloj con logo propio, reloj con nombre, Seiko mod Datejust, Seiko mod Nautilus, Seiko mod GMT Master II, relojes artesanales España, regalo corporativo reloj, reloj empresa">
+<meta name="author" content="Paul Tower Fine Timepieces">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="PAUL TOWER — Relojes de Lujo Personalizados">
+<meta property="og:description" content="Relojes únicos con tu nombre o logo. Movimiento Seiko NH35, cristal de zafiro, acero 316L. Hechos a mano en España.">
+<meta property="og:image" content="logo-paul-tower.png">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PAUL TOWER — Fine Timepieces">
+<meta name="twitter:description" content="Relojes de lujo personalizados, hechos a mano en España.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="logo-paul-tower.png">
+<link rel="apple-touch-icon" href="logo-paul-tower.png">
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway:wght@200;300;400;500;600&family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<!-- Schema.org para Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Paul Tower Fine Timepieces",
+  "description": "Relojes de lujo personalizados, fabricados a mano en España.",
+  "image": "logo-paul-tower.png",
+  "telephone": "+34635330354",
+  "email": "Paul.tower20@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ES"
+  },
+  "priceRange": "€€€"
+}
+</script>
+
+<style>
+/* ══════════════════════════════════════════════════════════════
+   PAUL TOWER — CSS v2
+   ══════════════════════════════════════════════════════════════ */
+:root{
+  --g0:#B8933A; --g1:#C9A84C; --g2:#E2C97E; --g3:#F5E6B8;
+  --black:#04040A; --ink:#0C0C14; --layer1:#10101A; --layer2:#14141F; --layer3:#1A1A28;
+  --white:#F7F2E8; --off:#C8C0B0; --muted:#6E6860;
+  --success:#7CB342; --danger:#D32F2F;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--black);color:var(--white);
+  font-family:'Raleway',sans-serif;font-weight:300;
+  overflow-x:hidden;font-size:15.5px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+::selection{background:rgba(201,168,76,0.25);color:var(--white);}
+::-webkit-scrollbar{width:8px;}
+::-webkit-scrollbar-track{background:var(--black);}
+::-webkit-scrollbar-thumb{background:var(--g0);border-radius:4px;}
+::-webkit-scrollbar-thumb:hover{background:var(--g1);}
+img{max-width:100%;height:auto;}
+button{font-family:inherit;}
+
+#particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.4;}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opacity:0.3;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* ── NAV ── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  padding:0 48px;height:66px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background 0.4s, backdrop-filter 0.4s;
+}
+#nav.scrolled{
+  background:rgba(4,4,10,0.96);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(201,168,76,0.08);
+}
+.nav-logo img{height:40px;width:auto;display:block;}
+.nav-links{display:flex;gap:34px;list-style:none;}
+.nav-links a{
+  color:var(--off);font-size:9px;letter-spacing:3px;
+  text-transform:uppercase;text-decoration:none;
+  transition:color 0.25s;position:relative;padding-bottom:2px;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:0;left:0;
+  width:0;height:1px;background:var(--g1);
+  transition:width 0.3s;
+}
+.nav-links a:hover{color:var(--g2);}
+.nav-links a:hover::after{width:100%;}
+.nav-btn{
+  font-family:'Raleway',sans-serif;font-size:8.5px;
+  letter-spacing:3px;text-transform:uppercase;
+  padding:9px 22px;border:1px solid var(--g1);color:var(--g1);
+  background:transparent;cursor:pointer;
+  transition:all 0.3s;text-decoration:none;
+  position:relative;overflow:hidden;
+}
+.nav-btn::before{
+  content:'';position:absolute;inset:0;
+  background:var(--g1);transform:translateX(-101%);
+  transition:transform 0.3s;
+}
+.nav-btn span{position:relative;z-index:1;}
+.nav-btn:hover::before{transform:translateX(0);}
+.nav-btn:hover span{color:var(--black);}
+
+/* Mobile nav toggle */
+.nav-toggle{
+  display:none;background:none;border:none;
+  color:var(--g1);font-size:24px;cursor:pointer;
+}
+
+/* ── HERO ── */
+#hero{
+  position:relative;min-height:100vh;
+  display:grid;grid-template-columns:1fr 1fr;align-items:center;
+  overflow:hidden;z-index:2;padding-top:66px;
+}
+.hero-left{padding:0 0 0 8%;z-index:3;animation:heroIn 1.3s cubic-bezier(0.16,1,0.3,1) both;}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;margin-bottom:24px;}
+.hero-tag-line{width:28px;height:1px;background:var(--g1);}
+.hero-tag-text{font-size:8.5px;letter-spacing:5px;text-transform:uppercase;color:var(--g1);}
+.hero-h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,4.5vw,70px);
+  font-weight:400;line-height:1.0;margin-bottom:22px;letter-spacing:-0.5px;
+}
+.hero-h1 em{font-style:italic;color:var(--g2);display:block;}
+.hero-sub{
+  font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--muted);line-height:2;margin-bottom:38px;max-width:320px;
+}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;}
+.cta-main{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 28px;background:var(--g1);color:var(--black);
+  font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;
+  text-transform:uppercase;text-decoration:none;font-weight:500;
+  transition:all 0.3s;border:1px solid var(--g1);cursor:pointer;
+}
+.cta-main:hover{background:var(--g2);border-color:var(--g2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,168,76,0.25);}
+.cta-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 26px;background:transparent;color:var(--off);
+  font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;
+  text-transform:uppercase;text-decoration:none;
+  border:1px solid rgba(255,255,255,0.12);transition:all 0.3s;
+}
+.cta-ghost:hover{border-color:var(--g1);color:var(--g1);}
+.hero-right{
+  position:relative;min-height:100vh;
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.hero-glow{
+  position:absolute;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(ellipse at 40% 40%,rgba(201,168,76,0.09),transparent 70%);
+  filter:blur(44px);
+}
+.hero-ring{position:absolute;border-radius:50%;border:1px solid rgba(201,168,76,0.07);}
+.hero-ring.r1{width:440px;height:440px;animation:spin 44s linear infinite;}
+.hero-ring.r2{width:350px;height:350px;animation:spin 32s linear infinite reverse;}
+.hero-watch-img{
+  width:min(380px,82vw);height:auto;object-fit:contain;
+  position:relative;z-index:2;
+  filter:drop-shadow(0 16px 50px rgba(0,0,0,0.92)) drop-shadow(0 0 36px rgba(201,168,76,0.1));
+  animation:float 7s ease-in-out infinite;
+}
+.hero-scroll{
+  position:absolute;bottom:30px;left:8%;
+  display:flex;align-items:center;gap:12px;z-index:3;
+}
+.hero-scroll-line{
+  width:1px;height:44px;
+  background:linear-gradient(to bottom,var(--g1),transparent);
+  animation:pulse 2.2s ease-in-out infinite;
+}
+.hero-scroll-text{
+  font-size:8px;letter-spacing:5px;text-transform:uppercase;
+  color:var(--muted);writing-mode:vertical-rl;
+}
+
+/* ── MARQUEE ── */
+.marquee-wrap{
+  position:relative;z-index:2;background:var(--layer1);
+  border-top:1px solid rgba(201,168,76,0.09);
+  border-bottom:1px solid rgba(201,168,76,0.09);
+  overflow:hidden;padding:12px 0;
+}
+.marquee-track{display:flex;white-space:nowrap;animation:marquee 24s linear infinite;}
+.mi{
+  display:inline-flex;align-items:center;padding:0 26px;
+  font-size:8.5px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);
+}
+.md{color:var(--g1);margin-right:26px;font-size:5px;}
+
+/* ── SECCIONES ── */
+.sec{position:relative;z-index:2;padding:90px 8%;}
+.lbl{display:inline-flex;align-items:center;gap:12px;margin-bottom:14px;}
+.lbl-line{width:24px;height:1px;background:var(--g1);}
+.lbl-text{font-size:8.5px;letter-spacing:5px;text-transform:uppercase;color:var(--g1);}
+.h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(28px,3.2vw,46px);
+  font-weight:400;line-height:1.1;letter-spacing:-0.3px;
+}
+.h2 em{font-style:italic;color:var(--g2);}
+.body-t{font-size:12px;line-height:1.9;color:var(--muted);}
+
+/* ── ABOUT ── */
+#about{
+  background:var(--ink);padding:0;
+  display:grid;grid-template-columns:1fr 1fr;
+  z-index:2;position:relative;
+}
+.about-l{padding:90px 8%;display:flex;flex-direction:column;justify-content:center;}
+.about-r{
+  background:radial-gradient(ellipse at 40% 60%,rgba(201,168,76,0.05),transparent 70%);
+  display:flex;align-items:center;justify-content:center;
+  padding:60px;border-left:1px solid rgba(201,168,76,0.06);
+}
+.about-logo{width:220px;filter:drop-shadow(0 0 36px rgba(201,168,76,0.14));}
+.stat-row{
+  display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;
+  border-top:1px solid rgba(201,168,76,0.1);
+}
+.stat{padding:22px 0 0;border-right:1px solid rgba(201,168,76,0.07);}
+.stat:last-child{border-right:none;}
+.stat-v{font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:var(--g1);line-height:1;}
+.stat-k{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:6px;}
+
+/* ── MOVIMIENTO ── */
+.mv-inner{max-width:860px;margin:0 auto;text-align:center;}
+.mv-desc{max-width:560px;margin:16px auto 44px;font-size:12px;line-height:1.9;color:var(--muted);}
+.specs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(201,168,76,0.06);}
+.spec-card{background:var(--layer2);padding:28px 20px;text-align:center;transition:background 0.3s;}
+.spec-card:hover{background:var(--layer3);}
+.spec-v{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:var(--g1);margin-bottom:8px;}
+.spec-k{font-size:8.5px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);line-height:1.5;}
+
+/* ── COLECCIÓN ── */
+.grid22{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:44px;}
+.wcard{background:var(--layer2);position:relative;overflow:hidden;cursor:pointer;}
+.wcard-img-wrap{
+  aspect-ratio:1;overflow:hidden;
+  background:radial-gradient(ellipse at center,rgba(201,168,76,0.04),transparent);
+  display:flex;align-items:center;justify-content:center;
+}
+.wcard-img{
+  width:84%;height:84%;object-fit:contain;
+  filter:drop-shadow(0 8px 22px rgba(0,0,0,0.88));
+  transition:transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.wcard:hover .wcard-img{transform:scale(1.06);}
+.wcard-body{padding:20px 20px 24px;border-top:1px solid rgba(201,168,76,0.07);}
+.wcard-ref{font-size:7.5px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;}
+.wcard-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:400;margin-bottom:5px;line-height:1.2;}
+.wcard-tag{font-size:11px;color:var(--muted);line-height:1.5;}
+.wcard-ov{
+  position:absolute;inset:0;background:rgba(4,4,10,0.92);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:9px;opacity:0;transition:opacity 0.35s;padding:24px;
+}
+.wcard:hover .wcard-ov,.wcard.touched .wcard-ov{opacity:1;}
+.ov-title{font-family:'Cormorant',serif;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--g2);margin-bottom:4px;}
+.ov-btns{display:flex;flex-direction:column;gap:7px;width:100%;max-width:220px;}
+.ob-ghost{
+  padding:10px 16px;background:transparent;color:var(--off);
+  font-size:8.5px;letter-spacing:2px;text-transform:uppercase;
+  border:1px solid rgba(255,255,255,0.16);cursor:pointer;
+  transition:all 0.22s;font-family:'Raleway',sans-serif;width:100%;
+}
+.ob-ghost:hover{border-color:var(--g1);color:var(--g1);}
+.ob-outline{
+  padding:10px 16px;background:transparent;color:var(--g1);
+  font-size:8.5px;letter-spacing:2px;text-transform:uppercase;
+  border:1px solid var(--g1);cursor:pointer;
+  transition:all 0.22s;font-family:'Raleway',sans-serif;width:100%;
+}
+.ob-outline:hover{background:rgba(201,168,76,0.08);}
+.ob-fill{
+  padding:10px 16px;background:var(--g1);color:var(--black);
+  font-size:8.5px;letter-spacing:2px;text-transform:uppercase;
+  border:1px solid var(--g1);cursor:pointer;font-weight:500;
+  transition:all 0.22s;font-family:'Raleway',sans-serif;width:100%;
+}
+.ob-fill:hover{background:var(--g2);border-color:var(--g2);}
+
+/* ── TRUST ── */
+.trust{
+  display:grid;grid-template-columns:repeat(6,1fr);
+  background:var(--ink);border-top:1px solid rgba(201,168,76,0.07);
+  border-bottom:1px solid rgba(201,168,76,0.07);
+  position:relative;z-index:2;
+}
+.tc{
+  padding:30px 16px;text-align:center;
+  border-right:1px solid rgba(201,168,76,0.05);
+  transition:background 0.3s;
+}
+.tc:last-child{border-right:none;}
+.tc:hover{background:var(--layer1);}
+.tc-icon{color:var(--g1);font-size:22px;margin-bottom:10px;}
+.tc-lbl{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);line-height:1.6;}
+
+/* ── CONFIGURADOR ── */
+.cfg-wrap{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;
+  margin-top:50px;align-items:start;
+}
+.cfg-stage{position:sticky;top:90px;}
+.cfg-frame{
+  background:var(--layer2);
+  border:1px solid rgba(201,168,76,0.12);
+  padding:30px 28px;position:relative;
+  aspect-ratio:1/1.05;
+  display:flex;flex-direction:column;
+}
+.corner{position:absolute;width:14px;height:14px;border:1px solid var(--g1);}
+.corner.tl{top:8px;left:8px;border-right:none;border-bottom:none;}
+.corner.tr{top:8px;right:8px;border-left:none;border-bottom:none;}
+.corner.bl{bottom:8px;left:8px;border-right:none;border-top:none;}
+.corner.br{bottom:8px;right:8px;border-left:none;border-top:none;}
+
+.sel-tabs{
+  display:flex;gap:5px;margin-bottom:18px;
+  flex-wrap:wrap;justify-content:center;
+}
+.sel-tab{
+  padding:7px 11px;background:transparent;
+  color:var(--muted);font-size:8.5px;letter-spacing:2px;
+  text-transform:uppercase;border:1px solid rgba(201,168,76,0.15);
+  cursor:pointer;transition:all 0.25s;font-family:'Raleway',sans-serif;
+}
+.sel-tab.on{background:rgba(201,168,76,0.12);color:var(--g1);border-color:var(--g1);}
+.sel-tab:hover{color:var(--g2);}
+
+.cfg-watch-wrap{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.cfg-watch{
+  width:88%;max-width:340px;height:auto;object-fit:contain;
+  filter:drop-shadow(0 12px 30px rgba(0,0,0,0.86));
+  transition:opacity 0.3s, transform 0.4s;
+}
+.cfg-watch.sw{opacity:0.2;transform:scale(0.95);}
+
+.cfg-name{
+  text-align:center;font-family:'Playfair Display',serif;
+  font-size:16px;color:var(--g2);font-style:italic;
+  letter-spacing:1px;margin-top:14px;min-height:24px;
+  word-break:break-word;
+}
+.cfg-detail{
+  text-align:center;font-size:8.5px;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--muted);margin-top:6px;
+}
+
+.cfg-notice{
+  margin-top:16px;background:var(--layer1);
+  border-left:3px solid var(--g1);
+  padding:14px 18px;
+}
+.notice-t{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--g1);margin-bottom:5px;}
+.notice-b{font-size:11px;line-height:1.7;color:var(--off);}
+
+.cfg-form{display:flex;flex-direction:column;gap:22px;}
+.field{}
+.field-lbl{
+  font-size:9px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--g1);margin-bottom:10px;
+}
+.field-in{
+  width:100%;background:transparent;
+  border:1px solid rgba(201,168,76,0.18);
+  padding:12px 14px;color:var(--white);
+  font-family:'Raleway',sans-serif;font-size:13px;
+  transition:border-color 0.25s;
+}
+.field-in:focus{outline:none;border-color:var(--g1);}
+.field-in::placeholder{color:var(--muted);}
+textarea.field-in{resize:vertical;min-height:80px;font-family:'Raleway',sans-serif;}
+
+.upload-btn{
+  width:100%;background:transparent;color:var(--off);
+  border:1px dashed rgba(201,168,76,0.22);
+  padding:12px;font-size:10px;letter-spacing:2px;
+  text-transform:uppercase;cursor:pointer;
+  transition:all 0.25s;font-family:'Raleway',sans-serif;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.upload-btn:hover{border-color:var(--g1);color:var(--g1);}
+.upload-btn span{color:var(--g1);font-size:14px;}
+.logo-ok{
+  margin-top:8px;font-size:10px;color:var(--success);
+  letter-spacing:1px;min-height:14px;
+}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px;}
+.chip{
+  padding:8px 14px;background:transparent;
+  color:var(--muted);font-size:9px;letter-spacing:2px;
+  text-transform:uppercase;border:1px solid rgba(201,168,76,0.15);
+  cursor:pointer;transition:all 0.25s;
+  font-family:'Raleway',sans-serif;
+}
+.chip.on{background:rgba(201,168,76,0.12);color:var(--g1);border-color:var(--g1);}
+.chip:hover{color:var(--g2);}
+.color-hint{
+  margin-top:8px;font-size:10px;letter-spacing:1px;
+  color:var(--muted);
+}
+
+/* ── STORY ── */
+#story{
+  background:var(--black);
+  display:grid;grid-template-columns:1fr 1fr;
+  align-items:center;padding:90px 8%;position:relative;z-index:2;
+  gap:60px;
+}
+.story-quote{
+  font-family:'Cormorant',serif;font-size:clamp(20px,1.9vw,28px);
+  font-style:italic;font-weight:300;line-height:1.5;
+  color:var(--off);margin:18px 0;
+}
+.story-quote em{color:var(--g2);font-weight:400;}
+.story-rule{width:50px;height:1px;background:var(--g1);margin:24px 0;}
+.story-body{font-size:13px;line-height:1.9;color:var(--off);margin-bottom:14px;}
+.story-img-wrap{position:relative;}
+.story-frame{
+  background:radial-gradient(ellipse at center,rgba(201,168,76,0.06),transparent 70%);
+  padding:40px;display:flex;justify-content:center;align-items:center;
+  border:1px solid rgba(201,168,76,0.08);
+}
+.story-img{width:280px;height:280px;object-fit:contain;filter:drop-shadow(0 12px 40px rgba(0,0,0,0.9));}
+.story-badge{
+  position:absolute;top:-12px;right:20px;
+  background:var(--black);color:var(--g1);
+  font-size:9px;letter-spacing:3px;text-transform:uppercase;
+  padding:8px 16px;border:1px solid var(--g1);
+}
+
+/* ── PROCESO ── */
+.proc-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:rgba(201,168,76,0.08);
+  margin-top:44px;border:1px solid rgba(201,168,76,0.08);
+}
+.paso{
+  background:var(--layer2);padding:36px 28px;
+  position:relative;transition:background 0.3s;
+}
+.paso:hover{background:var(--layer3);}
+.paso-n{
+  font-family:'Playfair Display',serif;font-size:48px;
+  color:rgba(201,168,76,0.18);position:absolute;top:18px;right:24px;line-height:1;
+}
+.paso-t{
+  font-family:'Playfair Display',serif;font-size:18px;
+  color:var(--g2);margin-bottom:12px;font-weight:400;
+}
+.paso-b{font-size:12px;line-height:1.8;color:var(--off);}
+
+.ct-panel{
+  margin-top:50px;display:grid;grid-template-columns:1fr 1fr;
+  gap:40px;background:var(--ink);
+  padding:36px;border:1px solid rgba(201,168,76,0.08);
+  align-items:center;
+}
+.ct-title{
+  font-family:'Playfair Display',serif;font-size:22px;
+  color:var(--g2);margin-bottom:8px;font-weight:400;
+}
+.ct-sub{font-size:12px;line-height:1.8;color:var(--off);margin-bottom:16px;}
+.ct-links{display:flex;flex-direction:column;gap:10px;}
+.ct-link{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--g1);text-decoration:none;font-size:13px;
+  transition:color 0.25s;
+}
+.ct-link:hover{color:var(--g2);}
+.ct-link span{font-size:14px;}
+.ct-note{
+  font-size:9.5px;letter-spacing:1px;color:var(--muted);
+  margin-top:14px;line-height:1.7;text-align:center;
+}
+
+/* ── TESTIMONIOS ── */
+.tgrid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:rgba(201,168,76,0.06);margin-top:44px;
+  border:1px solid rgba(201,168,76,0.06);
+}
+.tcard{background:var(--layer2);padding:30px 26px;}
+.tstars{color:var(--g1);font-size:11px;letter-spacing:3px;margin-bottom:14px;}
+.ttext{
+  font-family:'Cormorant',serif;font-size:15px;
+  font-style:italic;line-height:1.7;color:var(--off);margin-bottom:16px;
+}
+.tauthor{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--g1);}
+
+/* ── FAQ ── */
+.faq-inner{max-width:780px;margin:44px auto 0;}
+.faq-item{border-bottom:1px solid rgba(201,168,76,0.08);}
+.faq-btn{
+  width:100%;text-align:left;padding:20px 0;background:none;
+  border:none;color:var(--white);font-family:'Raleway',sans-serif;
+  font-size:13px;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;
+  letter-spacing:0.5px;transition:color 0.25s;
+}
+.faq-btn:hover{color:var(--g2);}
+.faq-ic{
+  color:var(--g1);font-size:18px;transition:transform 0.3s;
+  flex-shrink:0;margin-left:14px;
+}
+.faq-ic.open{transform:rotate(45deg);}
+.faq-ans{
+  max-height:0;overflow:hidden;
+  transition:max-height 0.45s cubic-bezier(0.4,0,0.2,1);
+  color:var(--off);font-size:12px;line-height:1.9;
+}
+.faq-ans.open{max-height:300px;padding-bottom:20px;}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--black);padding:60px 8% 24px;
+  border-top:1px solid rgba(201,168,76,0.1);position:relative;z-index:2;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:48px;margin-bottom:40px;
+}
+.footer-logo img{height:50px;margin-bottom:8px;}
+.footer-sub{
+  font-family:'Cormorant',serif;font-style:italic;
+  color:var(--g1);font-size:13px;letter-spacing:3px;
+  text-transform:uppercase;margin-bottom:14px;
+}
+.footer-desc{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:20px;}
+.footer-ct{display:flex;flex-direction:column;gap:8px;}
+.footer-ct a{color:var(--off);font-size:12px;text-decoration:none;transition:color 0.25s;}
+.footer-ct a:hover{color:var(--g1);}
+.footer-col h4{
+  color:var(--g1);font-size:9.5px;letter-spacing:3px;
+  text-transform:uppercase;margin-bottom:16px;font-weight:500;
+}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:10px;}
+.footer-col a{
+  color:var(--off);text-decoration:none;font-size:11.5px;
+  transition:color 0.25s;
+}
+.footer-col a:hover{color:var(--g2);}
+.footer-bottom{
+  padding-top:24px;border-top:1px solid rgba(201,168,76,0.08);
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:14px;
+}
+.footer-copy{font-size:10px;color:var(--muted);letter-spacing:0.5px;}
+.footer-mark{color:var(--g1);}
+.footer-legal{display:flex;gap:14px;font-size:10px;}
+.footer-legal a{color:var(--muted);text-decoration:none;transition:color 0.2s;}
+.footer-legal a:hover{color:var(--g1);}
+
+/* ── MODALES ── */
+.overlay{
+  position:fixed;inset:0;background:rgba(4,4,10,0.86);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  z-index:500;display:none;align-items:center;justify-content:center;
+  padding:20px;
+}
+.overlay.show{display:flex;animation:fadeIn 0.3s;}
+.mbox{
+  background:var(--layer1);border:1px solid rgba(201,168,76,0.18);
+  max-width:480px;width:100%;max-height:90vh;overflow-y:auto;
+  padding:36px 30px;position:relative;
+  animation:slideUp 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.mclose{
+  position:absolute;top:14px;right:18px;background:none;border:none;
+  color:var(--off);font-size:24px;cursor:pointer;
+  transition:color 0.2s;line-height:1;
+}
+.mclose:hover{color:var(--g1);}
+.msup{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--g1);margin-bottom:8px;}
+.mtitle{
+  font-family:'Playfair Display',serif;font-size:24px;
+  font-weight:400;line-height:1.2;margin-bottom:16px;
+}
+.mbody{font-size:12.5px;line-height:1.8;color:var(--off);margin-bottom:20px;}
+.mnote{font-size:10.5px;color:var(--muted);text-align:center;margin-top:14px;line-height:1.6;}
+
+.min{
+  width:100%;background:transparent;
+  border:1px solid rgba(201,168,76,0.18);
+  padding:11px 14px;color:var(--white);
+  font-family:'Raleway',sans-serif;font-size:13px;
+  margin-bottom:10px;transition:border-color 0.25s;
+}
+.min:focus{outline:none;border-color:var(--g1);}
+.min::placeholder{color:var(--muted);}
+textarea.min{resize:vertical;min-height:60px;}
+
+.sr{display:flex;justify-content:space-between;font-size:11px;padding:5px 0;border-bottom:1px dotted rgba(201,168,76,0.07);gap:14px;}
+.sr:last-child{border-bottom:none;}
+.sr-k{color:var(--muted);letter-spacing:1px;text-transform:uppercase;font-size:9px;}
+.sr-v{color:var(--white);text-align:right;font-weight:400;word-break:break-word;}
+
+/* Honeypot (oculto) */
+.honeypot{
+  position:absolute !important;
+  left:-10000px;width:1px;height:1px;
+  overflow:hidden;opacity:0;
+}
+
+/* ── WHATSAPP FLOTANTE ── */
+.wa-fab{
+  position:fixed;bottom:24px;right:24px;z-index:300;
+  width:54px;height:54px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  text-decoration:none;color:white;font-size:26px;
+  box-shadow:0 6px 22px rgba(37,211,102,0.4);
+  transition:all 0.3s;
+}
+.wa-fab:hover{transform:scale(1.08);box-shadow:0 8px 28px rgba(37,211,102,0.55);}
+.wa-fab::before{
+  content:'';position:absolute;inset:-4px;border-radius:50%;
+  border:2px solid #25D366;opacity:0;
+  animation:pulseRing 2s ease-out infinite;
+}
+@keyframes pulseRing{0%{opacity:0.5;transform:scale(1);}100%{opacity:0;transform:scale(1.35);}}
+
+/* ── COOKIES BANNER ── */
+.cookie-banner{
+  position:fixed;bottom:0;left:0;right:0;z-index:400;
+  background:var(--layer1);border-top:1px solid var(--g1);
+  padding:18px 24px;display:none;
+  flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;
+}
+.cookie-banner.show{display:flex;}
+.cookie-text{font-size:11.5px;color:var(--off);line-height:1.6;flex:1;min-width:240px;}
+.cookie-text a{color:var(--g1);text-decoration:none;}
+.cookie-btn{
+  padding:8px 22px;background:var(--g1);color:var(--black);
+  font-size:9px;letter-spacing:2px;text-transform:uppercase;
+  border:none;cursor:pointer;font-family:'Raleway',sans-serif;font-weight:500;
+}
+.cookie-btn:hover{background:var(--g2);}
+
+/* ── ANIMACIONES ── */
+@keyframes heroIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes pulse{0%,100%{opacity:0.3;}50%{opacity:1;}}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:none;}}
+
+.rv{opacity:0;transform:translateY(28px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.rv.on{opacity:1;transform:none;}
+.rv.d1{transition-delay:0.08s;}
+.rv.d2{transition-delay:0.16s;}
+.rv.d3{transition-delay:0.24s;}
+
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE — MEJORADO RESPECTO AL ORIGINAL
+   ══════════════════════════════════════════════════════════════ */
+@media(max-width:1100px){
+  .cfg-wrap{gap:40px;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:900px){
+  #nav{padding:0 24px;height:60px;}
+  .nav-links{display:none;}
+  .nav-toggle{display:block;}
+
+  #hero{grid-template-columns:1fr;min-height:auto;padding:90px 0 60px;}
+  .hero-left{padding:0 24px;text-align:center;}
+  .hero-tag{justify-content:center;}
+  .hero-sub{margin:0 auto 30px;}
+  .hero-ctas{justify-content:center;}
+  .hero-right{min-height:340px;margin-top:20px;}
+  .hero-ring.r1{width:300px;height:300px;}
+  .hero-ring.r2{width:240px;height:240px;}
+  .hero-scroll{display:none;}
+
+  .sec{padding:60px 24px;}
+  #about{grid-template-columns:1fr;}
+  .about-l{padding:60px 24px;}
+  .about-r{padding:40px 24px;border-left:none;border-top:1px solid rgba(201,168,76,0.06);}
+
+  .specs-grid{grid-template-columns:repeat(2,1fr);}
+  .grid22{grid-template-columns:1fr;}
+  .trust{grid-template-columns:repeat(3,1fr);}
+  .tc:nth-child(3){border-right:none;}
+  .tc:nth-child(-n+3){border-bottom:1px solid rgba(201,168,76,0.05);}
+
+  .cfg-wrap{grid-template-columns:1fr;gap:30px;}
+  .cfg-stage{position:relative;top:0;}
+
+  #story{grid-template-columns:1fr;padding:60px 24px;gap:40px;}
+  .story-img{width:240px;height:240px;}
+
+  .proc-grid{grid-template-columns:1fr;}
+  .ct-panel{grid-template-columns:1fr;padding:28px 22px;gap:24px;}
+  .tgrid{grid-template-columns:1fr;}
+
+  .footer-grid{grid-template-columns:1fr;gap:32px;}
+  footer{padding:50px 24px 20px;}
+
+  .wa-fab{bottom:18px;right:18px;width:48px;height:48px;font-size:22px;}
+}
+
+@media(max-width:520px){
+  .hero-h1{font-size:36px;}
+  .hero-ctas{flex-direction:column;align-items:stretch;}
+  .cta-main,.cta-ghost{justify-content:center;}
+  .mbox{padding:28px 22px;}
+  .mtitle{font-size:20px;}
+  .specs-grid{grid-template-columns:1fr 1fr;}
+  .trust{grid-template-columns:repeat(2,1fr);}
+  .tc{border-right:1px solid rgba(201,168,76,0.05);}
+  .tc:nth-child(even){border-right:none;}
+  .sel-tabs{gap:4px;}
+  .sel-tab{padding:6px 9px;font-size:7.5px;}
+  .chips{gap:5px;}
+  .chip{padding:7px 11px;font-size:8.5px;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+}
+
+/* Mobile menu drawer */
+.mobile-menu{
+  position:fixed;top:0;right:-100%;
+  width:80%;max-width:320px;height:100vh;
+  background:var(--layer1);border-left:1px solid var(--g1);
+  padding:80px 30px 30px;z-index:250;
+  transition:right 0.4s cubic-bezier(0.4,0,0.2,1);
+  display:flex;flex-direction:column;gap:20px;
+}
+.mobile-menu.open{right:0;}
+.mobile-menu a{
+  color:var(--off);text-decoration:none;
+  font-size:13px;letter-spacing:2px;text-transform:uppercase;
+  padding:10px 0;border-bottom:1px solid rgba(201,168,76,0.08);
+  transition:color 0.2s;
+}
+.mobile-menu a:hover{color:var(--g1);}
+.mobile-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,0.7);
+  z-index:240;opacity:0;pointer-events:none;
+  transition:opacity 0.3s;
+}
+.mobile-overlay.show{opacity:1;pointer-events:auto;}
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">
+    <img src="logo-paul-tower.png" alt="Paul Tower Fine Timepieces">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#collection">Colección</a></li>
+    <li><a href="#config">Personalizar</a></li>
+    <li><a href="#about">Marca</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#config" class="nav-btn"><span>◆ Crear mi reloj</span></a>
+  <button class="nav-toggle" aria-label="Menú" onclick="toggleMobileMenu()">☰</button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+<aside class="mobile-menu" id="mobileMenu">
+  <a href="#collection" onclick="toggleMobileMenu()">Colección</a>
+  <a href="#config" onclick="toggleMobileMenu()">Personalizar</a>
+  <a href="#about" onclick="toggleMobileMenu()">Marca</a>
+  <a href="#proceso" onclick="toggleMobileMenu()">Proceso</a>
+  <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+  <a href="tel:+34635330354" onclick="toggleMobileMenu()" style="color:var(--g1);">📞 (+34) 635 33 03 54</a>
+</aside>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-tag">
+      <div class="hero-tag-line"></div>
+      <span class="hero-tag-text">Fine Timepieces · Edición Limitada</span>
+    </div>
+    <h1 class="hero-h1">El tiempo que <em>llevará tu nombre.</em></h1>
+    <p class="hero-sub">Relojes de lujo personalizados.<br>Tu nombre. Tu logo. Tu esfera.<br>Hechos a mano en España.</p>
+    <div class="hero-ctas">
+      <a href="#config" class="cta-main">◆ Crear mi reloj único</a>
+      <a href="#collection" class="cta-ghost">Ver colección</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-glow"></div>
+    <div class="hero-ring r1"></div>
+    <div class="hero-ring r2"></div>
+    <img class="hero-watch-img" src="fotos-relojes/datejust-verde.png" alt="Reloj Paul Tower personalizado">
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <div class="hero-scroll-text">Descubrir</div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="mi">Seiko NH35 · Movimiento Automático</span><span class="md">◆</span>
+    <span class="mi">Cristal de Zafiro</span><span class="md">◆</span>
+    <span class="mi">Acero Inoxidable 316L</span><span class="md">◆</span>
+    <span class="mi">Personalización Total</span><span class="md">◆</span>
+    <span class="mi">Hecho a Mano en España</span><span class="md">◆</span>
+    <span class="mi">Envío Asegurado</span><span class="md">◆</span>
+    <span class="mi">Seiko NH35 · Movimiento Automático</span><span class="md">◆</span>
+    <span class="mi">Cristal de Zafiro</span><span class="md">◆</span>
+    <span class="mi">Acero Inoxidable 316L</span><span class="md">◆</span>
+    <span class="mi">Personalización Total</span><span class="md">◆</span>
+    <span class="mi">Hecho a Mano en España</span><span class="md">◆</span>
+    <span class="mi">Envío Asegurado</span><span class="md">◆</span>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="about-l">
+    <div class="lbl rv"><div class="lbl-line"></div><span class="lbl-text">Paul Tower · Origen</span></div>
+    <h2 class="h2 rv d1">No vendemos relojes.<br><em>Creamos legados.</em></h2>
+    <p class="body-t rv d2" style="margin-top:18px;">Cada Paul Tower es una pieza única. Concebida, diseñada y fabricada para una sola persona. Con el movimiento automático Seiko NH35 en su interior, cristal de zafiro antiarañazos y caja de acero inoxidable 316L, cada reloj combina tradición relojera japonesa con personalización artesanal española.</p>
+    <p class="body-t rv d2" style="margin-top:10px;">No buscamos cantidad. Buscamos a las personas que entienden que un reloj con su nombre o su marca cuenta una historia que ningún producto en serie podrá contar.</p>
+    <div class="stat-row rv d3">
+      <div class="stat"><div class="stat-v">100%</div><div class="stat-k">Personalizado</div></div>
+      <div class="stat"><div class="stat-v">48h</div><div class="stat-k">Diseño previo</div></div>
+      <div class="stat"><div class="stat-v">316L</div><div class="stat-k">Acero quirúrgico</div></div>
+    </div>
+  </div>
+  <div class="about-r">
+    <img src="logo-paul-tower.png" alt="Logo Paul Tower" class="about-logo">
+  </div>
+</section>
+
+<!-- ══ MOVIMIENTO ══ -->
+<section class="sec" id="movimiento" style="background:var(--layer1);">
+  <div class="mv-inner">
+    <div class="lbl rv" style="justify-content:center;"><div class="lbl-line"></div><span class="lbl-text">El corazón mecánico</span></div>
+    <h2 class="h2 rv d1">Movimiento <em>Seiko NH35</em></h2>
+    <p class="mv-desc rv d2">El mismo movimiento que equipa relojes de marcas premium. Calibre automático japonés con 24 rubíes, 41 horas de reserva de marcha y función de fecha. Robusto, preciso y reparable.</p>
+    <div class="specs-grid rv d2">
+      <div class="spec-card"><div class="spec-v">21.600</div><div class="spec-k">Alternancias<br>por hora</div></div>
+      <div class="spec-card"><div class="spec-v">24</div><div class="spec-k">Rubíes</div></div>
+      <div class="spec-card"><div class="spec-v">41h</div><div class="spec-k">Reserva<br>de marcha</div></div>
+      <div class="spec-card"><div class="spec-v">+/-30s</div><div class="spec-k">Precisión<br>al día</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COLECCIÓN ══ -->
+<section class="sec" id="collection">
+  <div class="lbl rv"><div class="lbl-line"></div><span class="lbl-text">Nuestra colección</span></div>
+  <h2 class="h2 rv d1">Cuatro modelos. <em>Infinitas piezas únicas.</em></h2>
+  <p class="body-t rv d2" style="max-width:580px;margin-top:14px;">Elige tu base y haz que sea tuyo. Personaliza la esfera, el color, la caja y la correa. O pídelo tal como aparece. Cada decisión hace tu reloj irrepetible.</p>
+
+  <div class="grid22">
+
+    <!-- REF 001 -->
+    <div class="wcard rv">
+      <div class="wcard-img-wrap">
+        <img class="wcard-img" loading="lazy" src="fotos-relojes/datejust-arabes.png" alt="Seiko mod Datejust Números Árabes">
+      </div>
+      <div class="wcard-body">
+        <div class="wcard-ref">PT · REF. 001</div>
+        <div class="wcard-name">Seiko mod Datejust</div>
+        <div class="wcard-tag">Números Árabes · La elegancia clásica con un giro contemporáneo.</div>
+      </div>
+      <div class="wcard-ov">
+        <div class="ov-title">Datejust · Árabes</div>
+        <div class="ov-btns">
+          <button class="ob-ghost"   onclick="openInfo('da');event.stopPropagation()">ℹ &nbsp; Info del reloj</button>
+          <button class="ob-outline" onclick="goConfig('da');event.stopPropagation()">✦ &nbsp; Personalizar este reloj</button>
+          <button class="ob-fill"    onclick="openOrder('da');event.stopPropagation()">◆ &nbsp; Pedir tal como está</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- REF 002 -->
+    <div class="wcard rv d1">
+      <div class="wcard-img-wrap">
+        <img class="wcard-img" loading="lazy" src="fotos-relojes/datejust-verde.png" alt="Seiko mod Datejust Verde">
+      </div>
+      <div class="wcard-body">
+        <div class="wcard-ref">PT · REF. 002</div>
+        <div class="wcard-name">Seiko mod Datejust</div>
+        <div class="wcard-tag">Esfera Verde · Elegancia atemporal con mecánica japonesa fiable.</div>
+      </div>
+      <div class="wcard-ov">
+        <div class="ov-title">Datejust · Verde</div>
+        <div class="ov-btns">
+          <button class="ob-ghost"   onclick="openInfo('dv');event.stopPropagation()">ℹ &nbsp; Info del reloj</button>
+          <button class="ob-outline" onclick="goConfig('dv');event.stopPropagation()">✦ &nbsp; Personalizar este reloj</button>
+          <button class="ob-fill"    onclick="openOrder('dv');event.stopPropagation()">◆ &nbsp; Pedir tal como está</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- REF 003 -->
+    <div class="wcard rv d2">
+      <div class="wcard-img-wrap">
+        <img class="wcard-img" loading="lazy" src="fotos-relojes/gmt-master.png" alt="Seiko mod GMT Master II">
+      </div>
+      <div class="wcard-body">
+        <div class="wcard-ref">PT · REF. 003</div>
+        <div class="wcard-name">Seiko mod GMT Master II</div>
+        <div class="wcard-tag">Bisel Cerámico · Viaja con estilo y controla todos los husos horarios.</div>
+      </div>
+      <div class="wcard-ov">
+        <div class="ov-title">GMT Master II</div>
+        <div class="ov-btns">
+          <button class="ob-ghost"   onclick="openInfo('gmt');event.stopPropagation()">ℹ &nbsp; Info del reloj</button>
+          <button class="ob-outline" onclick="goConfig('gmt');event.stopPropagation()">✦ &nbsp; Personalizar este reloj</button>
+          <button class="ob-fill"    onclick="openOrder('gmt');event.stopPropagation()">◆ &nbsp; Pedir tal como está</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- REF 004 -->
+    <div class="wcard rv d3">
+      <div class="wcard-img-wrap">
+        <img class="wcard-img" loading="lazy" src="fotos-relojes/nautilus.png" alt="Seiko mod Nautilus Azul">
+      </div>
+      <div class="wcard-body">
+        <div class="wcard-ref">PT · REF. 004</div>
+        <div class="wcard-name">Seiko mod Nautilus</div>
+        <div class="wcard-tag">Esfera Azul · Deportividad y lujo en una sola pieza.</div>
+      </div>
+      <div class="wcard-ov">
+        <div class="ov-title">Nautilus · Azul</div>
+        <div class="ov-btns">
+          <button class="ob-ghost"   onclick="openInfo('nau');event.stopPropagation()">ℹ &nbsp; Info del reloj</button>
+          <button class="ob-outline" onclick="goConfig('nau');event.stopPropagation()">✦ &nbsp; Personalizar este reloj</button>
+          <button class="ob-fill"    onclick="openOrder('nau');event.stopPropagation()">◆ &nbsp; Pedir tal como está</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ TRUST ══ -->
+<div class="trust">
+  <div class="tc"><div class="tc-icon">◎</div><div class="tc-lbl">Movimiento<br>Seiko NH35</div></div>
+  <div class="tc"><div class="tc-icon">✦</div><div class="tc-lbl">Cristal<br>de zafiro</div></div>
+  <div class="tc"><div class="tc-icon">⊡</div><div class="tc-lbl">Acero<br>316L</div></div>
+  <div class="tc"><div class="tc-icon">◈</div><div class="tc-lbl">100%<br>personalizable</div></div>
+  <div class="tc"><div class="tc-icon">◇</div><div class="tc-lbl">Envío<br>asegurado</div></div>
+  <div class="tc"><div class="tc-icon">⛰</div><div class="tc-lbl">Atención<br>personalizada</div></div>
+</div>
+
+<!-- ══ CONFIGURADOR ══ -->
+<section class="sec" id="config" style="background:var(--layer1);">
+  <div class="lbl rv"><div class="lbl-line"></div><span class="lbl-text">El corazón de Paul Tower</span></div>
+  <h2 class="h2 rv d1">Crea tu propio<br><em>reloj único</em></h2>
+  <p class="body-t rv d2" style="max-width:460px;margin-top:12px;">Selecciona el modelo y configura tu pieza. Recibirás el diseño y presupuesto en menos de 48 horas.</p>
+
+  <div class="cfg-wrap">
+
+    <!-- STAGE (preview) -->
+    <div class="cfg-stage">
+      <div class="cfg-frame">
+        <div class="corner tl"></div><div class="corner tr"></div>
+        <div class="corner bl"></div><div class="corner br"></div>
+
+        <div class="sel-tabs" id="cfg-modelo-reloj">
+          <button class="sel-tab on" type="button"
+            data-w="da" data-ref="PT-REF-001"
+            data-nombre="Seiko mod Datejust Números Árabes"
+            data-img="fotos-relojes/datejust-arabes.png"
+            onclick="swWatch(this)">Datejust Árabes</button>
+          <button class="sel-tab" type="button"
+            data-w="dv" data-ref="PT-REF-002"
+            data-nombre="Seiko mod Datejust Verde"
+            data-img="fotos-relojes/datejust-verde.png"
+            onclick="swWatch(this)">Datejust Verde</button>
+          <button class="sel-tab" type="button"
+            data-w="gmt" data-ref="PT-REF-003"
+            data-nombre="Seiko mod GMT Master II"
+            data-img="fotos-relojes/gmt-master.png"
+            onclick="swWatch(this)">GMT Master II</button>
+          <button class="sel-tab" type="button"
+            data-w="nau" data-ref="PT-REF-004"
+            data-nombre="Seiko mod Nautilus"
+            data-img="fotos-relojes/nautilus.png"
+            onclick="swWatch(this)">Nautilus</button>
+        </div>
+
+        <div class="cfg-watch-wrap">
+          <img class="cfg-watch" id="cfgImg"
+            src="fotos-relojes/datejust-arabes.png"
+            alt="Reloj seleccionado">
+        </div>
+
+        <div class="cfg-name" id="cfgName">TU NOMBRE AQUÍ</div>
+        <div class="cfg-detail">
+          <span id="cfgCase">· Acero ·</span>
+          <span id="cfgStrap">· Jubilee ·</span>
+        </div>
+      </div>
+
+      <div class="cfg-notice">
+        <div class="notice-t">◆ Recibe tu diseño</div>
+        <div class="notice-b">En <strong>menos de 48 horas</strong> recibirás el render final, el <strong>presupuesto exacto</strong> y el <strong>plazo de entrega</strong>. Sin compromiso.</div>
+      </div>
+    </div>
+
+    <!-- FORM (opciones) -->
+    <div class="cfg-form">
+
+      <div class="field">
+        <div class="field-lbl">◆ Tu nombre en la esfera</div>
+        <input class="field-in" id="cfg-nombre-esfera" type="text"
+          placeholder="Tu nombre, lema o texto..." maxlength="20" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <div class="field-lbl">◆ Tu logo (opcional)</div>
+        <button type="button" class="upload-btn"
+          onclick="document.getElementById('cfg-logo-archivo').click()">
+          <span>⊕</span> Subir mi logo o isotipo
+        </button>
+        <input type="file" id="cfg-logo-archivo" name="logo_archivo" accept="image/*,.pdf,.svg" style="display:none">
+        <div class="logo-ok" id="cfgLogoOk"></div>
+      </div>
+
+      <div class="field">
+        <div class="field-lbl">◆ Color de esfera</div>
+        <div class="chips" id="cfg-color-esfera">
+          <button class="chip on"  type="button" data-cn="Verde"                    onclick="pickChip(this,'color','cfg-color-esfera')">Verde</button>
+          <button class="chip"     type="button" data-cn="Navy Blue"                onclick="pickChip(this,'color','cfg-color-esfera')">Navy Blue</button>
+          <button class="chip"     type="button" data-cn="Azul clarito"             onclick="pickChip(this,'color','cfg-color-esfera')">Azul clarito</button>
+          <button class="chip"     type="button" data-cn="Olive Green"              onclick="pickChip(this,'color','cfg-color-esfera')">Olive Green</button>
+          <button class="chip"     type="button" data-cn="Gris"                     onclick="pickChip(this,'color','cfg-color-esfera')">Gris</button>
+          <button class="chip"     type="button" data-cn="Marrón chocolate"         onclick="pickChip(this,'color','cfg-color-esfera')">Marrón chocolate</button>
+          <button class="chip"     type="button" data-cn="Negro índices dorados"    onclick="pickChip(this,'color','cfg-color-esfera')">Negro · dorados</button>
+          <button class="chip"     type="button" data-cn="Negro índices plateados"  onclick="pickChip(this,'color','cfg-color-esfera')">Negro · plateados</button>
+          <button class="chip"     type="button" data-cn="Blanco índices dorados"   onclick="pickChip(this,'color','cfg-color-esfera')">Blanco · dorados</button>
+          <button class="chip"     type="button" data-cn="Blanco índices plateados" onclick="pickChip(this,'color','cfg-color-esfera')">Blanco · plateados</button>
+        </div>
+        <div class="color-hint" id="colorHint">Esfera: Verde</div>
+      </div>
+
+      <div class="field" id="field-caja">
+        <div class="field-lbl">◆ Tipo de caja</div>
+        <div class="chips" id="cfg-tipo-caja">
+          <button class="chip on" type="button" data-only="" onclick="pickChip(this,'case','cfg-tipo-caja','cfgCase')">Acero</button>
+          <button class="chip"    type="button" data-only="da,dv" onclick="pickChip(this,'case','cfg-tipo-caja','cfgCase')">Acero dorado</button>
+          <button class="chip"    type="button" data-only="da,dv" onclick="pickChip(this,'case','cfg-tipo-caja','cfgCase')">Dos tonos</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-lbl">◆ Correa</div>
+        <div class="chips" id="cfg-correa">
+          <button class="chip on" type="button" data-only="da,dv,gmt"     onclick="pickChip(this,'strap','cfg-correa','cfgStrap')">Jubilee</button>
+          <button class="chip"    type="button" data-only="da,dv,gmt"     onclick="pickChip(this,'strap','cfg-correa','cfgStrap')">Oyster</button>
+          <button class="chip"    type="button" data-only="da,dv,nau"     onclick="pickChip(this,'strap','cfg-correa','cfgStrap')">Caucho</button>
+          <button class="chip"    type="button" data-only="da,dv"         onclick="pickChip(this,'strap','cfg-correa','cfgStrap')">Piel</button>
+          <button class="chip"    type="button" data-only="nau"           onclick="pickChip(this,'strap','cfg-correa','cfgStrap')">Acero</button>
+        </div>
+      </div>
+
+      <div class="field" id="field-bisel">
+        <div class="field-lbl">◆ Bisel</div>
+        <div class="chips" id="cfg-bisel">
+          <button class="chip on" type="button" data-only="da,dv"  onclick="pickChip(this,'bisel','cfg-bisel')">Estriado</button>
+          <button class="chip"    type="button" data-only="da,dv"  onclick="pickChip(this,'bisel','cfg-bisel')">Liso</button>
+          <button class="chip"    type="button" data-only="gmt"    onclick="pickChip(this,'bisel','cfg-bisel')">Negro-Azul</button>
+          <button class="chip"    type="button" data-only="gmt"    onclick="pickChip(this,'bisel','cfg-bisel')">Verde-Negro</button>
+          <button class="chip"    type="button" data-only="gmt"    onclick="pickChip(this,'bisel','cfg-bisel')">Gris-Negro</button>
+          <button class="chip"    type="button" data-only="gmt"    onclick="pickChip(this,'bisel','cfg-bisel')">Azul-Rojo</button>
+          <button class="chip"    type="button" data-only="gmt"    onclick="pickChip(this,'bisel','cfg-bisel')">Negro</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-lbl">◆ Comentarios o instrucciones especiales (opcional)</div>
+        <textarea class="field-in" id="cfg-notas" rows="3" maxlength="500"
+          placeholder="Cuéntanos cualquier detalle especial: regalo corporativo, grabados extra, fecha de entrega deseada..."></textarea>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:9px;margin-top:4px;">
+        <button type="button" class="cta-main"
+          onclick="openM('cfgModal')"
+          style="justify-content:center;width:100%;padding:14px;">
+          ◆ &nbsp; Recibir diseño y presupuesto
+        </button>
+        <p style="font-size:9px;text-align:center;color:var(--muted);letter-spacing:1px;line-height:1.7;">
+          Sin compromiso · Diseño + presupuesto + plazo en menos de 48h
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STORY ══ -->
+<section id="story">
+  <div>
+    <div class="lbl rv"><div class="lbl-line"></div><span class="lbl-text">Paul Tower Fine Timepieces</span></div>
+    <p class="story-quote rv d1">"No fabricamos relojes. Fabricamos el objeto con el que elegirás medir cada <em>momento importante</em> de tu vida."</p>
+    <div class="story-rule rv d2"></div>
+    <p class="story-body rv d2">En Paul Tower hacemos relojes únicos y personalizados. Te damos la posibilidad de tener un reloj con tu sello o el logo de tu empresa, creando piezas únicas y exclusivas que reflejan estilo y marca personal o profesional.</p>
+    <p class="story-body rv d2">Cada reloj incorpora el reconocido movimiento automático Seiko NH35, cristal de zafiro antiarañazos y caja de acero inoxidable 316L. Porque el lujo verdadero no debería ser inaccesible.</p>
+    <a href="#config" class="cta-main rv d3" style="margin-top:18px;display:inline-flex;">Crear mi reloj único</a>
+  </div>
+  <div class="story-img-wrap rv d2">
+    <div class="story-frame">
+      <img class="story-img" loading="lazy" src="fotos-relojes/datejust-verde.png" alt="Seiko mod Datejust Verde">
+    </div>
+    <div class="story-badge">Fabricados a mano</div>
+  </div>
+</section>
+
+<!-- ══ PROCESO ══ -->
+<section class="sec" id="proceso" style="background:var(--layer1);">
+  <div class="lbl rv"><div class="lbl-line"></div><span class="lbl-text">Cómo funciona</span></div>
+  <h2 class="h2 rv d1">Proceso de <em>compra</em></h2>
+  <div class="proc-grid">
+    <div class="paso rv"    data-n="01"><div class="paso-n">01</div><div class="paso-t">Contáctanos</div><div class="paso-b">Escríbenos y solicita la referencia deseada, o configura tu reloj en nuestro configurador. Te atendemos personalmente.</div></div>
+    <div class="paso rv d1" data-n="02"><div class="paso-n">02</div><div class="paso-t">Diseño & presupuesto</div><div class="paso-b">En menos de 48 horas recibirás el render final de tu reloj personalizado junto al presupuesto exacto. Sin compromiso.</div></div>
+    <div class="paso rv d2" data-n="03"><div class="paso-n">03</div><div class="paso-t">Pago & entrega</div><div class="paso-b">Una vez aprobado el diseño, te enviamos un enlace de pago seguro. Tu reloj llega directamente a tu puerta con envío asegurado.</div></div>
+  </div>
+  <div class="ct-panel rv">
+    <div>
+      <div class="ct-title">Contacto directo</div>
+      <p class="ct-sub">Escríbenos y solicita la referencia deseada. Te enviaremos un enlace para que puedas pagar tus productos.</p>
+      <div class="ct-links">
+        <a href="tel:+34635330354"              class="ct-link"><span>📞</span>(+34) 635 33 03 54</a>
+        <a href="mailto:Paul.tower20@gmail.com" class="ct-link"><span>✉</span>Paul.tower20@gmail.com</a>
+        <a href="https://wa.me/34635330354" target="_blank" rel="noopener" class="ct-link"><span>💬</span>WhatsApp directo</a>
+      </div>
+    </div>
+    <div>
+      <button type="button" class="cta-main" onclick="openM('cfgModal')" style="justify-content:center;width:100%;">◆ &nbsp; Configurar mi reloj</button>
+      <p class="ct-note">Sin pago previo · Primero ves el diseño, luego decides · Respuesta en menos de 48h</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIOS ══ -->
+<section class="sec" id="testimonials" style="background:var(--ink);">
+  <div class="lbl rv"><div class="lbl-line"></div><span class="lbl-text">Lo que dicen</span></div>
+  <h2 class="h2 rv d1">Quienes llevan Paul Tower<br><em>en la muñeca.</em></h2>
+  <div class="tgrid">
+    <div class="tcard rv">
+      <div class="tstars">★ ★ ★ ★ ★</div>
+      <p class="ttext">"Pedí el GMT con el logo de mi empresa para regalar a mi equipo directivo. El resultado superó cada expectativa. Calidad, elegancia y una exclusividad que ninguna otra marca puede ofrecer."</p>
+      <div class="tauthor">— Alejandro M. · CEO · Madrid</div>
+    </div>
+    <div class="tcard rv d1">
+      <div class="tstars">★ ★ ★ ★ ★</div>
+      <p class="ttext">"El Nautilus con el nombre de mi marido fue el regalo perfecto. Una pieza que parece costar el triple. Atención impecable y un resultado que dejó a todos sin palabras."</p>
+      <div class="tauthor">— Sofía L. · Arquitecta · Barcelona</div>
+    </div>
+    <div class="tcard rv d2">
+      <div class="tstars">★ ★ ★ ★ ★</div>
+      <p class="ttext">"Llevaba años buscando algo exclusivo sin vaciarme el bolsillo. El Datejust personalizado con mi nombre es exactamente lo que buscaba. Paul Tower lo logró."</p>
+      <div class="tauthor">— Carlos R. · Director Comercial · Sevilla</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="sec" id="faq" style="background:var(--layer1);">
+  <div class="lbl rv"><div class="lbl-line"></div><span class="lbl-text">Preguntas frecuentes</span></div>
+  <h2 class="h2 rv d1">Todo lo que necesitas <em>saber.</em></h2>
+  <div class="faq-inner">
+    <div class="faq-item"><button class="faq-btn" onclick="doFaq(this)">¿Cuánto tarda en fabricarse mi reloj?<span class="faq-ic">+</span></button><div class="faq-ans"><p style="padding-top:6px;">Cada pieza se fabrica a mano tras la confirmación del pedido. Recibirás el diseño final y el plazo exacto en menos de 48 horas. El tiempo habitual de fabricación es de 5 a 10 días hábiles.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="doFaq(this)">¿Qué movimiento llevan los relojes?<span class="faq-ic">+</span></button><div class="faq-ans"><p style="padding-top:6px;">Todos los relojes incorporan el movimiento automático Seiko NH35, con 24 rubíes, 41 horas de reserva de marcha y función de fecha. El cristal es de zafiro altamente resistente a los arañazos. La caja es de acero inoxidable 316L.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="doFaq(this)">¿Cómo funciona la personalización?<span class="faq-ic">+</span></button><div class="faq-ans"><p style="padding-top:6px;">Configuras tu reloj y nos envías tus preferencias. En menos de 48h recibes el render del diseño final junto al presupuesto exacto. Una vez aprobado el diseño, confirmamos el pedido y comenzamos la fabricación.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="doFaq(this)">¿Puedo añadir el logo de mi empresa a la esfera?<span class="faq-ic">+</span></button><div class="faq-ans"><p style="padding-top:6px;">Sí. Puedes añadir tu logotipo o isotipo a la esfera. Envíanos el archivo en alta resolución (PNG, SVG o PDF). Es una de nuestras personalizaciones más solicitadas, especialmente para regalos corporativos.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="doFaq(this)">¿Cómo se realiza el pago?<span class="faq-ic">+</span></button><div class="faq-ans"><p style="padding-top:6px;">Una vez aprobado el diseño, te enviamos un enlace de pago seguro. No hay ningún pago previo hasta que hayas visto y aprobado el diseño final de tu reloj.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="doFaq(this)">¿Cuál es la política de envíos?<span class="faq-ic">+</span></button><div class="faq-ans"><p style="padding-top:6px;">Todos los envíos se realizan de forma asegurada con número de seguimiento. Para más información sobre costes contacta en Paul.tower20@gmail.com o al (+34) 635 33 03 54.</p></div></div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><img src="logo-paul-tower.png" alt="Paul Tower Fine Timepieces"></div>
+      <div class="footer-sub">Fine Timepieces</div>
+      <p class="footer-desc">Relojes de lujo personalizados con movimiento Seiko NH35, cristal de zafiro y acero inoxidable 316L. Cada pieza, única.</p>
+      <div class="footer-ct">
+        <a href="tel:+34635330354">📞 (+34) 635 33 03 54</a>
+        <a href="mailto:Paul.tower20@gmail.com">✉ Paul.tower20@gmail.com</a>
+        <a href="https://wa.me/34635330354" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Colección</h4>
+      <ul>
+        <li><a href="#collection">Datejust Árabes</a></li>
+        <li><a href="#collection">Datejust Verde</a></li>
+        <li><a href="#collection">GMT Master II</a></li>
+        <li><a href="#collection">Nautilus Azul</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Marca</h4>
+      <ul>
+        <li><a href="#about">Sobre nosotros</a></li>
+        <li><a href="#movimiento">Movimiento NH35</a></li>
+        <li><a href="#config">Personalización</a></li>
+        <li><a href="#proceso">Proceso de compra</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="mailto:Paul.tower20@gmail.com">Email</a></li>
+        <li><a href="https://wa.me/34635330354" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#proceso">Envíos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 <span class="footer-mark">Paul Tower Fine Timepieces</span>. Todos los derechos reservados.</div>
+    <div class="footer-legal">
+      <a href="#" onclick="alert('Página de aviso legal pendiente de redactar.');return false;">Aviso legal</a>
+      <a href="#" onclick="alert('Página de privacidad pendiente de redactar.');return false;">Privacidad</a>
+      <a href="#" onclick="alert('Página de cookies pendiente de redactar.');return false;">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/34635330354?text=Hola%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Paul%20Tower." target="_blank" rel="noopener" class="wa-fab" title="Contactar por WhatsApp" aria-label="Contactar por WhatsApp">💬</a>
+
+<!-- Banner cookies -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">
+    Usamos cookies técnicas para el correcto funcionamiento de la web. No usamos cookies de seguimiento ni publicidad.
+  </div>
+  <button class="cookie-btn" onclick="aceptarCookies()">Entendido</button>
+</div>
+
+<!-- ══════════════════════════════
+  MODAL 1 — CONFIGURADOR → Google Apps Script
+══════════════════════════════ -->
+<div class="overlay" id="cfgModal" onclick="if(event.target===this)closeM('cfgModal')">
+  <div class="mbox">
+    <button class="mclose" onclick="closeM('cfgModal')" aria-label="Cerrar">×</button>
+    <div class="msup">Siguiente paso</div>
+    <h3 class="mtitle">Recibe tu<br><em style="color:var(--g2);">diseño exclusivo</em></h3>
+    <p class="mbody">
+      En <strong style="color:var(--white);">menos de 48 horas</strong> recibirás:<br>
+      <strong style="color:var(--g1);">① Render del diseño final</strong><br>
+      <strong style="color:var(--g1);">② Presupuesto exacto</strong><br>
+      <strong style="color:var(--g1);">③ Plazo de fabricación y entrega</strong>
+    </p>
+    <div style="background:var(--layer2);border:1px solid rgba(201,168,76,0.11);padding:14px;margin-bottom:18px;">
+      <div style="font-size:8.5px;letter-spacing:3px;text-transform:uppercase;color:var(--g1);margin-bottom:9px;">◆ Tu configuración</div>
+      <div id="cfgResumen"></div>
+    </div>
+
+    <!-- FORMULARIO — se envía por JS al Apps Script de Google -->
+    <form id="cfgForm" onsubmit="enviarPedidoCfg(event); return false;">
+      <input type="hidden" name="tipo_pedido"   id="h_tipo"    value="Configurado (personalizado)">
+      <input type="hidden" name="modelo_reloj"  id="h_modelo"  value="">
+      <input type="hidden" name="referencia"    id="h_ref"     value="">
+      <input type="hidden" name="nombre_esfera" id="h_nesfera" value="">
+      <input type="hidden" name="color_esfera"  id="h_color"   value="">
+      <input type="hidden" name="tipo_caja"     id="h_caja"    value="">
+      <input type="hidden" name="correa"        id="h_correa"  value="">
+      <input type="hidden" name="acabado_caja"  id="h_acabado" value="">
+      <input type="hidden" name="notas"         id="h_notas"   value="">
+      <input type="hidden" name="logo_archivo_existe" id="h_logo_existe" value="0">
+
+      <!-- Honeypot anti-spam -->
+      <div class="honeypot" aria-hidden="true">
+        <label>Web (no rellenar)<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <input type="text"  class="min" name="cliente_nombre"   id="cfg-cliente-nombre"   placeholder="Tu nombre completo *"    required autocomplete="name">
+      <input type="email" class="min" name="cliente_email"    id="cfg-cliente-email"    placeholder="Tu correo electrónico *" required autocomplete="email">
+      <input type="tel"   class="min" name="cliente_whatsapp" id="cfg-cliente-whatsapp" placeholder="WhatsApp (opcional)"             autocomplete="tel">
+
+      <!-- El logo viajará aquí, copiado por JS al enviar -->
+      <input type="file" id="cfg-logo-hidden" name="logo_archivo" accept="image/*,.pdf,.svg" style="display:none">
+
+      <button type="submit" class="cta-main" style="width:100%;justify-content:center;padding:13px;">◆ &nbsp; Enviar y recibir mi diseño</button>
+    </form>
+    <p class="mnote">🔒 <strong>Sin pago previo.</strong> Primero apruebas el diseño, luego confirmas.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+  MODAL 2 — INFO RELOJ
+══════════════════════════════ -->
+<div class="overlay" id="infoModal" onclick="if(event.target===this)closeM('infoModal')">
+  <div class="mbox" style="max-width:540px;">
+    <button class="mclose" onclick="closeM('infoModal')" aria-label="Cerrar">×</button>
+    <div id="infoBody"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+  MODAL 3 — PEDIR TAL COMO ESTÁ
+══════════════════════════════ -->
+<div class="overlay" id="orderModal" onclick="if(event.target===this)closeM('orderModal')">
+  <div class="mbox" style="max-width:460px;">
+    <button class="mclose" onclick="closeM('orderModal')" aria-label="Cerrar">×</button>
+    <div class="msup">Pedido sin personalización</div>
+    <h3 class="mtitle">Pedir <em style="color:var(--g2);" id="orderName">este reloj</em><br>tal como está</h3>
+    <p class="mbody">Recibirás el reloj exactamente como aparece en la foto. Te contactaremos en <strong style="color:var(--white);">menos de 48 horas</strong> con el presupuesto y detalles del envío.</p>
+    <form id="orderForm" onsubmit="enviarPedidoOrder(event); return false;">
+      <input type="hidden" name="tipo_pedido"   value="Pedir tal como está">
+      <input type="hidden" name="modelo_reloj"  id="ord_modelo"  value="">
+      <input type="hidden" name="referencia"    id="ord_ref"     value="">
+      <input type="hidden" name="nombre_esfera" value="—">
+      <input type="hidden" name="color_esfera"  value="Original">
+      <input type="hidden" name="tipo_caja"     value="Original">
+      <input type="hidden" name="correa"        value="Original">
+      <input type="hidden" name="acabado_caja"  value="Original">
+
+      <!-- Honeypot anti-spam -->
+      <div class="honeypot" aria-hidden="true">
+        <label>Web (no rellenar)<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <input type="text"  class="min" name="cliente_nombre"   id="ord-cliente-nombre"   placeholder="Tu nombre completo *"    required autocomplete="name">
+      <input type="email" class="min" name="cliente_email"    id="ord-cliente-email"    placeholder="Tu correo electrónico *" required autocomplete="email">
+      <input type="tel"   class="min" name="cliente_whatsapp" id="ord-cliente-whatsapp" placeholder="WhatsApp (opcional)"             autocomplete="tel">
+      <textarea class="min" name="notas" placeholder="Comentarios o instrucciones (opcional)" rows="3" maxlength="500"></textarea>
+
+      <button type="submit" class="cta-main" style="width:100%;justify-content:center;padding:13px;">◆ &nbsp; Confirmar pedido</button>
+    </form>
+    <p class="mnote">🔒 Sin pago previo. Confirmamos los detalles antes de proceder.</p>
+  </div>
+</div>
+<!-- ══════════════════════════════ JAVASCRIPT ══════════════════════════════ -->
+<script>
+/* ── PARTÍCULAS ── */
+(function(){
+  const c=document.getElementById('particles'),ctx=c.getContext('2d');
+  let W,H,P=[];
+  const resize=()=>{W=c.width=innerWidth;H=c.height=innerHeight;};
+  resize();window.addEventListener('resize',resize);
+  // Menos partículas en móvil para no comer batería
+  const count = innerWidth < 700 ? 30 : 65;
+  for(let i=0;i<count;i++)P.push({x:Math.random()*2200,y:Math.random()*1400,vx:(Math.random()-.5)*.17,vy:(Math.random()-.5)*.17,r:Math.random()*1.1+.3,a:Math.random()});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);
+    P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(201,168,76,${.13+p.a*.18})`;ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+
+/* ── NAV SCROLL ── */
+window.addEventListener('scroll',()=>
+  document.getElementById('nav').classList.toggle('scrolled',scrollY>55));
+
+/* ── MOBILE MENU ── */
+function toggleMobileMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+  document.getElementById('mobileOverlay').classList.toggle('show');
+}
+
+/* ── DATOS DE RELOJES ── */
+const WD={
+  da:{name:'Seiko mod Datejust',sub:'Números Árabes',ref:'PT · REF. 001',refCode:'PT-REF-001',
+    img:'fotos-relojes/datejust-arabes.png',
+    desc:'Elegancia atemporal con mecánica japonesa fiable. Diseño clásico y versátil con acabados refinados, ideal para uso diario y ocasiones formales.',
+    specs:[['Movimiento','Automático Seiko NH35'],['Alternancias','21.600 por hora'],['Reserva','41 horas'],['Rubíes','24'],['Caja','Acero 316L · 40mm'],['Esfera','Negra con números árabes'],['Correa','Jubilee acero 316L'],['Cristal','Zafiro antiarañazos']]},
+  dv:{name:'Seiko mod Datejust',sub:'Esfera Verde',ref:'PT · REF. 002',refCode:'PT-REF-002',
+    img:'fotos-relojes/datejust-verde.png',
+    desc:'Elegancia atemporal con mecánica japonesa fiable. Un equilibrio perfecto entre sofisticación y funcionalidad.',
+    specs:[['Movimiento','Automático Seiko NH35'],['Alternancias','21.600 por hora'],['Reserva','41 horas'],['Rubíes','24'],['Caja','Acero 316L · 41mm'],['Esfera','Verde con índices plateados'],['Correa','Jubilee acero 316L'],['Cristal','Zafiro antiarañazos']]},
+  gmt:{name:'Seiko mod GMT Master II',sub:'Bisel Cerámico',ref:'PT · REF. 003',refCode:'PT-REF-003',
+    img:'fotos-relojes/gmt-master.png',
+    desc:'Pensado para viajeros. Función GMT para controlar dos husos horarios, combinando utilidad y diseño deportivo.',
+    specs:[['Movimiento','Automático Seiko NH35 GMT'],['Función','Doble zona horaria'],['Reserva','41 horas'],['Rubíes','24'],['Caja','Acero 316L · 40mm'],['Bisel','Cerámica negra/marrón'],['Correa','Jubilee acero 316L'],['Cristal','Zafiro antiarañazos']]},
+  nau:{name:'Seiko mod Nautilus',sub:'Esfera Azul',ref:'PT · REF. 004',refCode:'PT-REF-004',
+    img:'fotos-relojes/nautilus.png',
+    desc:'Deportividad y lujo en una sola pieza. Inspirado en el icónico diseño de caja integrada.',
+    specs:[['Movimiento','Automático Seiko NH35'],['Alternancias','21.600 por hora'],['Reserva','41 horas'],['Rubíes','24'],['Caja','Acero · caja integrada'],['Esfera','Azul sunburst'],['Correa','Brazalete integrado'],['Cristal','Zafiro antiarañazos']]}
+};
+
+/* ── LEER CONFIGURACIÓN ── */
+function getConfig(){
+  const mBtn=document.querySelector('#cfg-modelo-reloj .sel-tab.on');
+  return{
+    modelo  : mBtn?mBtn.dataset.nombre:'',
+    ref     : mBtn?mBtn.dataset.ref:'',
+    nesfera : document.getElementById('cfg-nombre-esfera').value.trim(),
+    logo    : (()=>{const f=document.getElementById('cfg-logo-archivo').files;return f&&f[0]?f[0].name:'Sin logo';})(),
+    color   : (document.querySelector('#cfg-color-esfera .chip.on')||{}).dataset?.cn||'',
+    caja    : (document.querySelector('#cfg-tipo-caja .chip.on')||{}).textContent?.trim()||'',
+    correa  : (document.querySelector('#cfg-correa .chip.on')||{}).textContent?.trim()||'',
+    bisel   : (document.querySelector('#cfg-bisel .chip.on')||{}).textContent?.trim()||'',
+    notas   : document.getElementById('cfg-notas').value.trim()
+  };
+}
+
+/* ── RELLENAR OCULTOS → PHP ── */
+function rellenarHiddens(){
+  const c=getConfig();
+  document.getElementById('h_modelo').value  = c.modelo;
+  document.getElementById('h_ref').value     = c.ref;
+  document.getElementById('h_nesfera').value = c.nesfera||'—';
+  document.getElementById('h_color').value   = c.color;
+  document.getElementById('h_caja').value    = c.caja;
+  document.getElementById('h_correa').value  = c.correa;
+  document.getElementById('h_acabado').value = c.bisel;   /* enviamos el bisel en el campo de acabado para no romper Apps Script */
+  document.getElementById('h_notas').value   = c.notas;
+
+  /* Copiar el archivo de logo al input dentro del form */
+  const fileSource = document.getElementById('cfg-logo-archivo');
+  const fileTarget = document.getElementById('cfg-logo-hidden');
+  if (fileSource.files && fileSource.files[0]) {
+    const dt = new DataTransfer();
+    dt.items.add(fileSource.files[0]);
+    fileTarget.files = dt.files;
+    document.getElementById('h_logo_existe').value = '1';
+  }
+}
+
+/* ── RESUMEN VISUAL EN MODAL ── */
+function mostrarResumen(){
+  const c=getConfig();
+  const rows=[
+    ['Modelo',c.modelo||'—'],['Referencia',c.ref||'—'],
+    ['Nombre esfera',c.nesfera||'—'],['Logo',c.logo],
+    ['Color esfera',c.color||'—'],['Tipo de caja',c.caja||'—'],
+    ['Correa',c.correa||'—'],['Bisel',c.bisel||'—']
+  ];
+  if(c.notas) rows.push(['Notas',c.notas.substring(0,60)+(c.notas.length>60?'…':'')]);
+  document.getElementById('cfgResumen').innerHTML=rows.map(r=>
+    `<div class="sr"><span class="sr-k">${r[0]}</span><span class="sr-v">${escapeHtml(r[1])}</span></div>`
+  ).join('');
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+/* ── CAMBIO DE RELOJ EN CONFIGURADOR ── */
+function swWatch(btn){
+  document.querySelectorAll('.sel-tab').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  const img=document.getElementById('cfgImg');
+  img.classList.add('sw');
+  setTimeout(()=>{
+    img.src = btn.dataset.img || '';
+    img.alt = btn.dataset.nombre || '';
+    img.classList.remove('sw');
+  },280);
+  aplicarOpcionesPorModelo();
+  guardarEstado();
+}
+
+/* ── OPCIONES DINÁMICAS SEGÚN MODELO ──
+   - Bisel: Datejust (Estriado/Liso) + GMT (Negro-Azul, Verde-Negro, etc.)
+   - Caja "Acero dorado" y "Dos tonos": SOLO Datejust.
+   - Correa: cada modelo tiene su set permitido (data-only).
+   - Si el modelo no tiene NINGUNA opción de bisel (Nautilus), ocultamos el campo. */
+function aplicarOpcionesPorModelo(){
+  const mBtn=document.querySelector('#cfg-modelo-reloj .sel-tab.on');
+  const modelo=mBtn?mBtn.dataset.w:'da';
+
+  // Filtrar chips por data-only en los 3 grupos
+  ['cfg-tipo-caja','cfg-correa','cfg-bisel'].forEach(grupoId=>{
+    const grupo=document.getElementById(grupoId);
+    if(!grupo)return;
+    const chips=grupo.querySelectorAll('.chip');
+    let huboCambioActiva=false;
+    chips.forEach(chip=>{
+      const only=(chip.dataset.only||'').trim();
+      const permitidos=only?only.split(',').map(s=>s.trim()):[];
+      const visible = !only || permitidos.includes(modelo);
+      chip.style.display = visible ? '' : 'none';
+      if(!visible && chip.classList.contains('on')){
+        chip.classList.remove('on');
+        huboCambioActiva=true;
+      }
+    });
+    // Si la chip seleccionada quedó oculta, marco la primera visible
+    if(huboCambioActiva){
+      const primera=Array.from(chips).find(c=>c.style.display!=='none');
+      if(primera){
+        primera.classList.add('on');
+        // Actualizo preview si corresponde (case/strap)
+        if(grupoId==='cfg-tipo-caja') document.getElementById('cfgCase').textContent='· '+primera.textContent.trim()+' ·';
+        if(grupoId==='cfg-correa')    document.getElementById('cfgStrap').textContent='· '+primera.textContent.trim()+' ·';
+      }
+    }
+  });
+
+  // Ocultar el campo Bisel entero si no hay ninguna opción visible para el modelo
+  const fieldBisel=document.getElementById('field-bisel');
+  if(fieldBisel){
+    const visibles=document.querySelectorAll('#cfg-bisel .chip:not([style*="none"])');
+    fieldBisel.style.display = visibles.length>0 ? '' : 'none';
+  }
+}
+
+/* Actualizar nombre en preview en tiempo real */
+document.getElementById('cfg-nombre-esfera').addEventListener('input',function(){
+  document.getElementById('cfgName').textContent=this.value.toUpperCase()||'TU NOMBRE AQUÍ';
+  guardarEstado();
+});
+
+/* Mostrar fichero subido */
+document.getElementById('cfg-logo-archivo').addEventListener('change',function(e){
+  if(e.target.files[0]){
+    document.getElementById('cfgLogoOk').textContent='✓ '+e.target.files[0].name;
+  }
+});
+
+/* Chips */
+function pickChip(el,type,groupId,previewId){
+  document.getElementById(groupId).querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
+  el.classList.add('on');
+  if(type==='color') document.getElementById('colorHint').textContent='Esfera: '+el.dataset.cn;
+  if(previewId) document.getElementById(previewId).textContent='· '+el.textContent.trim()+' ·';
+  guardarEstado();
+}
+
+/* ── PERSISTENCIA DE LA CONFIGURACIÓN (sessionStorage funciona en sesión, OK en chrome real) ──
+   Nota: en este artefacto Claude no funciona, pero en navegador real sí. */
+function guardarEstado(){
+  try{
+    const c=getConfig();
+    sessionStorage.setItem('pt_config', JSON.stringify(c));
+  }catch(e){/* navegador sin sessionStorage o privado */}
+}
+
+function recuperarEstado(){
+  try{
+    const raw = sessionStorage.getItem('pt_config');
+    if(!raw) return;
+    const c = JSON.parse(raw);
+    if(c.nesfera){
+      document.getElementById('cfg-nombre-esfera').value = c.nesfera;
+      document.getElementById('cfgName').textContent = c.nesfera.toUpperCase();
+    }
+    if(c.notas) document.getElementById('cfg-notas').value = c.notas;
+  }catch(e){}
+}
+
+/* ── MODALS ── */
+function openM(id){
+  if(id==='cfgModal'){
+    mostrarResumen();
+    rellenarHiddens();
+    // Limpiamos datos personales por si hubiera anteriores
+    ['cfg-cliente-nombre','cfg-cliente-email','cfg-cliente-whatsapp'].forEach(i=>document.getElementById(i).value='');
+  }
+  document.getElementById(id).classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeM(id){
+  document.getElementById(id).classList.remove('show');
+  document.body.style.overflow='';
+}
+
+/* Cerrar modales con ESC */
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    document.querySelectorAll('.overlay.show').forEach(m=>{
+      m.classList.remove('show');
+    });
+    document.body.style.overflow='';
+  }
+});
+
+/* ════════════════════════════════════════════════════════════
+   ENVÍO DE PEDIDOS — Google Apps Script
+   ════════════════════════════════════════════════════════════
+   ⚙ PEGA AQUÍ LA URL DE TU APPS SCRIPT:
+*/
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyd_0a_MMclYyHHagcJe25JTxa6ykrVcIhFkd_sh0CT_90H10ENop_W9hNPsS5XFSWEtQ/exec';
+
+/* ── Convertir File a base64 (para subir el logo) ── */
+function fileToBase64(file){
+  return new Promise((res,rej)=>{
+    const r=new FileReader();
+    r.onload=()=>res(r.result);
+    r.onerror=()=>rej();
+    r.readAsDataURL(file);
+  });
+}
+
+/* ── Mostrar mensaje de "enviando" / éxito / error ── */
+function setBtnEstado(btn,texto,disable){
+  if(!btn)return;
+  btn.disabled=!!disable;
+  btn.dataset.txt=btn.dataset.txt||btn.innerHTML;
+  btn.innerHTML=texto||btn.dataset.txt;
+}
+
+/* ── ENVÍO DEL CONFIGURADOR ── */
+async function enviarPedidoCfg(ev){
+  ev.preventDefault();
+  rellenarHiddens();
+
+  const n=document.getElementById('cfg-cliente-nombre').value.trim();
+  const e=document.getElementById('cfg-cliente-email').value.trim();
+  if(!n||!e){alert('Por favor completa tu nombre y correo electrónico.');return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){alert('Por favor introduce un correo electrónico válido.');return;}
+
+  if(APPS_SCRIPT_URL.includes('REEMPLAZA')){
+    alert('⚠ La web aún no está conectada al sistema de pedidos.\nEl administrador debe configurar la URL del Apps Script en el index.html.');
+    return;
+  }
+
+  const btn=ev.target.querySelector('button[type="submit"]');
+  setBtnEstado(btn,'⏳ Enviando...',true);
+
+  /* Preparar logo si existe */
+  let logoData={};
+  const logoFile=document.getElementById('cfg-logo-archivo').files[0];
+  if(logoFile){
+    if(logoFile.size>5*1024*1024){
+      alert('El logo es demasiado grande (máx 5MB)');
+      setBtnEstado(btn,null,false);
+      return;
+    }
+    try{
+      logoData.logo_base64=await fileToBase64(logoFile);
+      logoData.logo_nombre=logoFile.name;
+      logoData.logo_tipo=logoFile.type;
+    }catch(_){}
+  }
+
+  const datos={
+    website:document.querySelector('#cfgForm input[name="website"]').value,
+    tipo_pedido:document.getElementById('h_tipo').value,
+    cliente_nombre:n,
+    cliente_email:e,
+    cliente_whatsapp:document.getElementById('cfg-cliente-whatsapp').value.trim(),
+    modelo_reloj:document.getElementById('h_modelo').value,
+    referencia:document.getElementById('h_ref').value,
+    nombre_esfera:document.getElementById('h_nesfera').value,
+    color_esfera:document.getElementById('h_color').value,
+    tipo_caja:document.getElementById('h_caja').value,
+    correa:document.getElementById('h_correa').value,
+    acabado_caja:document.getElementById('h_acabado').value,
+    notas:document.getElementById('h_notas').value,
+    ...logoData
+  };
+
+  try{
+    const r=await fetch(APPS_SCRIPT_URL,{
+      method:'POST',
+      mode:'no-cors',  // necesario para Apps Script desde GitHub Pages
+      body:JSON.stringify(datos),
+      headers:{'Content-Type':'text/plain;charset=utf-8'} // text/plain evita preflight CORS
+    });
+    /* Con mode:'no-cors' no podemos leer la respuesta, pero si el fetch no
+       lanzó error, el pedido se ha procesado. Generamos un ID local solo
+       para mostrar al cliente. El ID real lo verás en tu Sheet y email. */
+    try{sessionStorage.removeItem('pt_config');}catch(_){}
+    const idLocal='PT-'+new Date().toISOString().replace(/[-:T.]/g,'').substring(0,15);
+    window.location.href='gracias.html?id='+encodeURIComponent(idLocal);
+  }catch(err){
+    setBtnEstado(btn,null,false);
+    alert('Hubo un problema al enviar tu pedido. Inténtalo de nuevo o contáctanos directamente al (+34) 635 33 03 54.');
+  }
+}
+
+/* ── ENVÍO "PEDIR TAL COMO ESTÁ" ── */
+async function enviarPedidoOrder(ev){
+  ev.preventDefault();
+
+  const n=document.getElementById('ord-cliente-nombre').value.trim();
+  const e=document.getElementById('ord-cliente-email').value.trim();
+  if(!n||!e){alert('Por favor completa tu nombre y correo electrónico.');return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){alert('Por favor introduce un correo electrónico válido.');return;}
+
+  if(APPS_SCRIPT_URL.includes('REEMPLAZA')){
+    alert('⚠ La web aún no está conectada al sistema de pedidos.\nEl administrador debe configurar la URL del Apps Script en el index.html.');
+    return;
+  }
+
+  const btn=ev.target.querySelector('button[type="submit"]');
+  setBtnEstado(btn,'⏳ Enviando...',true);
+
+  const f=document.getElementById('orderForm');
+  const datos={
+    website:f.querySelector('input[name="website"]').value,
+    tipo_pedido:f.querySelector('input[name="tipo_pedido"]').value,
+    cliente_nombre:n,
+    cliente_email:e,
+    cliente_whatsapp:document.getElementById('ord-cliente-whatsapp').value.trim(),
+    modelo_reloj:document.getElementById('ord_modelo').value,
+    referencia:document.getElementById('ord_ref').value,
+    nombre_esfera:'—',
+    color_esfera:'Original',
+    tipo_caja:'Original',
+    correa:'Original',
+    acabado_caja:'Original',
+    notas:f.querySelector('textarea[name="notas"]').value.trim()
+  };
+
+  try{
+    await fetch(APPS_SCRIPT_URL,{
+      method:'POST',
+      mode:'no-cors',
+      body:JSON.stringify(datos),
+      headers:{'Content-Type':'text/plain;charset=utf-8'}
+    });
+    const idLocal='PT-'+new Date().toISOString().replace(/[-:T.]/g,'').substring(0,15);
+    window.location.href='gracias.html?id='+encodeURIComponent(idLocal);
+  }catch(err){
+    setBtnEstado(btn,null,false);
+    alert('Hubo un problema al enviar tu pedido. Inténtalo de nuevo o contáctanos directamente al (+34) 635 33 03 54.');
+  }
+}
+
+
+/* ── INFO MODAL ── */
+function openInfo(key){
+  const w=WD[key];
+  const specs=w.specs.map(s=>`<div class="sr"><span class="sr-k">${s[0]}</span><span class="sr-v">${s[1]}</span></div>`).join('');
+  document.getElementById('infoBody').innerHTML=`
+    <div style="text-align:center;margin-bottom:16px;background:var(--layer2);padding:20px;">
+      <img src="${w.img}" style="width:160px;height:160px;object-fit:contain;filter:drop-shadow(0 8px 20px rgba(0,0,0,0.9));" alt="${w.name}">
+    </div>
+    <div class="msup">${w.ref}</div>
+    <h3 class="mtitle">${w.name}<br><em style="color:var(--g2);font-size:16px;">${w.sub}</em></h3>
+    <p class="mbody">${w.desc}</p>
+    <div style="font-size:8.5px;letter-spacing:4px;text-transform:uppercase;color:var(--g1);margin-bottom:10px;">◆ Especificaciones técnicas</div>
+    <div style="margin-bottom:20px;">${specs}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <button class="ob-outline" style="flex:1;min-width:140px;" onclick="closeM('infoModal');goConfig('${key}')">✦ Personalizar</button>
+      <button class="ob-fill"    style="flex:1;min-width:140px;" onclick="closeM('infoModal');openOrder('${key}')">◆ Pedir tal como está</button>
+    </div>`;
+  openM('infoModal');
+}
+
+function goConfig(key){
+  const btn=document.querySelector(`.sel-tab[data-w="${key}"]`);
+  if(btn)swWatch(btn);
+  closeM('infoModal');
+  document.getElementById('config').scrollIntoView({behavior:'smooth'});
+}
+
+/* ── PEDIR RELOJ ── */
+function openOrder(key){
+  const w=WD[key];
+  document.getElementById('orderName').textContent=w.name;
+  document.getElementById('ord_modelo').value=w.name+' '+w.sub;
+  document.getElementById('ord_ref').value=w.refCode;
+  ['ord-cliente-nombre','ord-cliente-email','ord-cliente-whatsapp'].forEach(i=>document.getElementById(i).value='');
+  openM('orderModal');
+}
+
+/* ── FAQ ── */
+function doFaq(btn){
+  const ans=btn.nextElementSibling,ic=btn.querySelector('.faq-ic');
+  const open=ans.classList.contains('open');
+  document.querySelectorAll('.faq-ans').forEach(a=>a.classList.remove('open'));
+  document.querySelectorAll('.faq-ic').forEach(i=>i.classList.remove('open'));
+  if(!open){ans.classList.add('open');ic.classList.add('open');}
+}
+
+/* ── SCROLL REVEAL ── */
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');ro.unobserve(e.target);}});
+},{threshold:0.07});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+
+/* ── COOKIES ── */
+function aceptarCookies(){
+  try{localStorage.setItem('pt_cookies','1');}catch(_){}
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+(function(){
+  try{
+    if(!localStorage.getItem('pt_cookies')){
+      setTimeout(()=>document.getElementById('cookieBanner').classList.add('show'), 800);
+    }
+  }catch(_){}
+})();
+
+/* ── INIT ── */
+recuperarEstado();
+aplicarOpcionesPorModelo();
+
+/* Tap en cards de relojes en móvil: muestra overlay */
+document.querySelectorAll('.wcard').forEach(card=>{
+  card.addEventListener('click',function(e){
+    if(window.innerWidth < 900){
+      document.querySelectorAll('.wcard.touched').forEach(c=>{if(c!==this)c.classList.remove('touched');});
+      this.classList.toggle('touched');
+    }
+  });
+});
+</script>
+</body>
+</html>

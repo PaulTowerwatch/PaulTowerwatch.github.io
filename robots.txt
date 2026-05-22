@@ -1,0 +1,14 @@
+# robots.txt — Paul Tower Fine Timepieces
+# https://paultowerwatch.github.io/
+
+User-agent: *
+Allow: /
+
+# Sitemap (avisa a Google de dónde están todas las URLs)
+Sitemap: https://paultowerwatch.github.io/sitemap.xml
+
+# Bloquear acceso a archivos de documentación/configuración
+Disallow: /README.md
+Disallow: /INSTRUCCIONES.md
+Disallow: /Code.gs
+Disallow: /.gitignore
